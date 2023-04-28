@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Survey </title>
+<style> .p1, .p2, .p3{font-weight:bold;color:#301934;}
+.d1{text-align:justify; color:#E53F71;} .d2, .d3{color:#E53F71;}
+.b-center{text-align:center;} body{background-color:#FFFFF0;} #p4{text-align:right;} 
+</style>
+</head>
+<body>
+
+<!--Heading part-->
+<img src = "1.jpg" align = "left" height="150px" width="150px">
+<br> <br>
+<h1 style = "text-align:center; color:#DC143C"> The Perfume Shop </h1>
+<h2 style = "text-align:center; color:#AA336A"> Your Feedback </h2> 
+<h4 style = "color:Purple;"> Kindly inform us with your feedback on the perfume. </h4>
+
+<!--Form part-->
+<form action ="" method ="get">
+
+<div class = "d1">
+<label for = "fn"> Full Name: </label>
+<input id="fn" type="text" name="fullname" size ="25" required/> <br> <br>
+
+<label for="#"> Phone number: </label>
+<input id="#" type="text" name="num" size="20" required/> <br> <br>
+
+<label for="@"> Email: </label>
+<input id="@" type="text" name="email" size="25"/> <br> <br>
+</div>
+
+<!--RADIOBUTTON PART, both names "y1" to have only 1 radiobutton checked,input id is before label because radiobutton comes first-->
+
+<p class = "p1"> Is this your first purchasing the perfume? </p> 
+
+<div class = "d2">
+<input id="Y" type="radio" name="y1" value="y2" required/>
+<label for="Y"> Yes </label>
+<input id="N" type="radio" name="y1" value="n2" required/> 
+<label for="N"> No </label> <br> <br>
+</div>
+
+<p class = "p2"> How satisfied are you with the perfume? </p>
+
+<div class = "d3">
+<label for = "opt"> Rating: </label>
+<select id = "opt" name = "opts"/>
+<option value = "0" selected disabled required> Select your rating </option>
+<option value = "1"> Very Satisfied </option>
+<option value = "2"> Satisfied </option>
+<option value = "3"> Neutral </option>
+<option value = "4"> Unsatisfied </option>
+<option value = "5"> Very Unsatisfied </option>
+</select> 
+</div>
+
+<br> 
+
+<p class="p3"> Do you have any comments regarding the perfume? </p>
+
+<div class="d4">
+<input type = "text" name="comments" size="70"/> 
+</div>
+
+<p id = "p4"> </p>
+
+<script>
+// Javascript part
+const t = new Date();
+document.getElementById("p4").innerHTML = t;
+</script>
+
+<!--Submit button-->
+<div class = "b-center">
+<button type = "Submit"> Submit </button>
+</div>
+
+</form>
+</body>
+
+</html>
